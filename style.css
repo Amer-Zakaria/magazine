@@ -1,0 +1,125 @@
+/* General */
+* {
+  --color-primary: #1d3557;
+  --color-secondary: #a8dadc;
+  --color-primary-lighter: #1d355780;
+  --color-secondary-lighter: #a8dadc80;
+  --color-secondary-darker: #9ba4b4;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg-primary {
+  background-color: #1d3557 !important;
+}
+.btn-primary {
+  background-color: #1d3557;
+  border-color: #1d3557;
+}
+.btn-secondary {
+  background-color: #a8dadc;
+  border-color: #a8dadc;
+}
+
+.btn-primary:hover {
+  background-color: #1d3557aa;
+  border-color: #1d3557aa;
+}
+
+.btn-secondary:hover {
+  background-color: #a8dadcaa;
+  border-color: #a8dadcaa;
+}
+
+/* Business: A sophisticated gradient of dark and light grays */
+.bg-Business {
+  background: linear-gradient(135deg, #3a3a3a, #d6d6d6);
+  color: white; /* Ensures text is readable on the gradient */
+}
+
+/* Health: A vibrant blend of greens symbolizing vitality */
+.bg-Health {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white; /* Ensures text is readable on the gradient */
+}
+
+/* Sport: A dynamic blue gradient to represent energy and action */
+.bg-Sport {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white; /* Ensures text is readable on the gradient */
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #aaa;
+}
+
+.icon {
+  color: white;
+  fill: white;
+  width: 35px;
+  height: 35px;
+}
+
+section {
+  margin-bottom: 6rem;
+}
+
+.card .card-img-overlay {
+  max-height: fit-content;
+}
+
+/* Nav */
+.nav__item {
+  margin-bottom: 0.4rem;
+}
+
+.expand .nav__header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.158);
+}
+
+.nav__icon {
+  cursor: pointer;
+}
+
+.expand .nav__icon {
+  opacity: 1 !important;
+  box-shadow: 0 0 0 3px var(--color-secondary-darker);
+  border-radius: 5px;
+}
+
+.nav__list {
+  max-height: 0;
+  transition: max-height 0.3s;
+  overflow: hidden;
+  margin: 0;
+}
+
+.expand .nav__list {
+  max-height: 22rem;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    max-height: fit-content;
+  }
+}
+
+/* News */
+.news__image {
+  filter: brightness(60%);
+}
+
+/* Articles */
+.article__image {
+  filter: brightness(80%);
+}
+
+#article img {
+  max-width: 100%;
+}
